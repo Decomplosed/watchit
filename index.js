@@ -19,10 +19,11 @@ program
     }
 
     const start = debounce(() => {
-      console.log('STARTING USERS PROGRAM');
+      spawn('node', [name], { stdio: 'inherit' })
     }, 100)
 
-    chokidar.watch('.')
+    chokidar
+      .watch('.')
       .on('add', start)
       .on('change', () => start)
       .on('unlink', () => start)
