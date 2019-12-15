@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Decomplosed/watchit/issues"
   },
-  "homepage": "https://github.com/Decomplosed/watchit#readme"
+  "homepage": "https://github.com/Decomplosed/watchit#readme",
+  "dependencies": {
+    "chokidar": "^3.3.0"
+  }
 }
